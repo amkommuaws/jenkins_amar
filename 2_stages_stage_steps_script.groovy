@@ -20,7 +20,9 @@ pipeline {
                     else 
                         println ("Do enroll!!")
                     // just sleep for 5 seconds
-                    sleep 10
+                    // https://www.jenkins.io/doc/pipeline/steps/workflow-basic-steps/
+                    // This will pause the pipeline till the time mentioned
+                    sleep 10 //sh 'sleep 10'
                     echo "************** Script block ended *********************"
                 }
             }
